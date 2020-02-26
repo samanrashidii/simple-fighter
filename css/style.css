@@ -1,0 +1,85 @@
+#app{height: 100%;}
+
+.user-box{
+    max-width: 300px;
+    text-align: center;
+    margin:auto;
+}
+
+.game-box{
+    min-width: 680px;
+    max-width: 700px;
+    padding:10px;
+    margin:auto;
+    user-select: none;
+}
+
+.health-bar{
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    background-color:#2f2f2f;
+    border-radius: 4px 4px 0 0;
+}
+
+.health-bar span{
+    display:block;
+    width:100%;
+    height:100%;
+    font-size:14px;
+    color:#fefefe;
+    text-align: center;
+    background-color:#449444;
+}
+
+.careful{background-color:#ef9200 !important;}
+.danger{background-color:#f55757 !important;}
+.boss{background-color:#843698 !important;}
+
+.character-box{
+    position: relative;
+    height: 318px;
+    background-color:#232323;
+}
+
+.character-box.enemy{background-color:#232123;}
+.character-box.enemy.active{background-color:#232323}
+
+.attack,
+.heal{
+    position: absolute;
+    top:20px;
+    left:20px;
+    font-family: Tahoma;
+    font-size:60px;
+    color:#f55757;
+    text-align: center;
+    opacity: 0;
+    z-index: 999;
+    transform:scale(.3,.3);
+}
+.heal{color:#449444;}
+.character-box.enemy .attack,
+.character-box.enemy .heal{
+    left:auto;
+    right:20px;
+}
+
+.score{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    color: #121212;
+    margin-bottom:10px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.attack.active,
+.heal.active{animation: 300ms popUP ease-in;}
+
+@keyframes popUP {
+    0%{opacity:0;transform:scale(.3,.3)}
+    50%{opacity:1;transform:scale(1,1)}
+    100%{opacity:0;transform:scale(.3,.3)}
+}
