@@ -1,6 +1,6 @@
-# Drawboard
+# Simple Fighter
 
-A Draw-board created with jQuery and Canvas to draw shapes
+A simple fight game made with CDN Vuejs and Samanira
 
 ## Language
 
@@ -9,13 +9,14 @@ English - LTR
 ## Demo
 
 You can see the demo by clicking below link :
-[http://drawboard.samanrashidi.com](http://drawboard.samanrashidi.com)
+[http://simplefighter.samanrashidi.com](http://simplefighter.samanrashidi.com)
 
 ## Built With
 
+* Vuejs
 * HTML 5
 * CSS
-* jQuery
+* Javascript
 
 ## Contributing
 
